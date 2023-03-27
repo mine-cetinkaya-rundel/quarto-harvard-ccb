@@ -1,0 +1,11 @@
+project:
+  type: website
+
+website:
+  title: "Hello Quarto"
+  navbar:
+    left:
+    - text: Home
+      href: index.qmd
+    - text: Slides
+      href: talk.qmd

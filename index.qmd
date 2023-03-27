@@ -1,12 +1,20 @@
 ---
 title: "Hello, Penguins!"
-format: html
+format: 
+  html: default
+  pdf: default
 editor: visual
+execute: 
+  echo: true
+bibliography: references.bib
 ---
+
+# Introduction
 
 ## Data
 
-For this analysis we'll use the penguins dataset from the palmerpenguins package.
+For this analysis we'll use the `penguins` dataset from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins) package.
+[@gorman2014]
 
 ```{r}
 #| label: load-packages
@@ -20,12 +28,20 @@ library(gt)
 
 ## Species
 
-The figure below is a bar plot of species of penguins.
+@fig-bill-dims-species is a bar plot of species of penguins.
 
 ```{r}
-#| label: bill-dims-species
-#| fig-width: 5
+#| label: fig-bill-dims-species
+#| fig-width: 8
 #| fig-asp: 0.618
+#| fig-cap: |
+#|   Scatterplot of bill depth and length of penguins.
+#| fig-alt: |
+#|   A scatterplot of bill depth (in mm) vs. bill length (in mm) 
+#|   of three species of penguins (Adelie, Chinstrap, and Gentoo), 
+#|   showing a positive association.
+#| output-location: slide
+#| code-line-numbers: "|3-6|10"
 
 ggplot(
   penguins,
@@ -42,13 +58,27 @@ ggplot(
 
 ## Penguins
 
-The table below shows the first 10 penguins from the dataset.
+@tbl-penguins-top10 shows the first 10 penguins from the dataset.
 
 ```{r}
-#| label: penguins-top10
+#| label: tbl-penguins-top10
+#| tbl-cap: The first 10 penguins in the dataset.
 
 penguins |>
   slice_head(n = 10) |>
   select(species, island, bill_length_mm, bill_depth_mm) |>
   gt()
 ```
+
+# Modeling results
+
+## Model 1
+
+...
+
+## Model 2
+
+...
+
+## References
+

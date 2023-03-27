@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: e38e52ee-93aa-4021-a3ef-a4ac4fc4bc95
+      url: 'https://mine.quarto.pub/quarto-harvard-ccb'
