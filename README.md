@@ -59,3 +59,18 @@ format:
 ```
 
 - `publish quarto`
+
+### Journal articles (time permitting)
+
+- Go to https://quarto.org/docs/journals/templates.html
+
+- Click on Quarto journals repo
+
+- Create one with JASA template
+
+my-awesome-paper
+
+- Add a citation
+
+First from Zotero
+Welcome to the tidyverse
