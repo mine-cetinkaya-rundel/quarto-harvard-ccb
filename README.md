@@ -2,6 +2,10 @@
 
 Materials for the Hello Quarto: A World of Possibilities (for Reproducible Publishing) talk at Harvard's CCB Seminar Series (2023-03-27)
 
+## Abstract
+
+Quarto is an open-source scientific and technical publishing system that unifies and extends the R Markdown ecosystem. This talk will introduce you to creating creating reproducible, computational documents, from course notes to journal publications to books and web pages with Quarto. Familiarity with R and RStudio will be helpful for following along with the demos, however, those who work with any computational documents in any language (e.g., Jupyter Notebooks with Python) will also find the content relevant, particularly since Quarto is language-agnostic and can be used to create dynamic content with any computing language.
+
 ## Setup notes
 
 R 4.2.2 (2022-10-31) -- "Innocent and Trusting"
